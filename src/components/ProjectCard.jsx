@@ -1,10 +1,25 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const ProjectCard = ({ name, img }) => {
+const ProjectCard = ({ name, img, about, language, link }) => {
   return (
     <div className="project">
-      <img className="project-img" src={img} alt="" />
-      <h3 className="project-name">{name}</h3>
+      <a href={link}>
+        <img className="project-img" src={img} alt="" />
+      </a>
+      <div className="project-details">
+        <p className="project-name">{name}</p>
+        <p className="project-about">{about}</p>
+        <div className="project-language">
+          {language.map((lan, idx) =>
+            idx !== language.length - 1 ? (
+              <p key={idx}>{lan}/</p>
+            ) : (
+              <p key={idx}>{lan}</p>
+            )
+          )}
+        </div>
+      </div>
     </div>
   )
 }
