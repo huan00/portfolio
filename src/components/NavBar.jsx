@@ -3,15 +3,20 @@ import { Link } from 'react-router-dom'
 
 const NavBar = () => {
   return (
-    <div>
-      <ul>
-        <li>Huan Zeng</li>
-        <li>
-          <Link to="/www.linkedin.com/in/huan-zeng">Linkedin</Link>
+    <div className="navbar">
+      <ul className="navbar-list">
+        <li className="navbar-list-item">
+          <Link to="/">Huan Zeng</Link>
         </li>
-        <li>
-          <Link to="https://github.com/huan00">Github</Link>
+        <li className="navbar-list-item">
+          <a href="http://www.linkedin.com/in/huan-zeng">Linkedin</a>
         </li>
+        <li className="navbar-list-item">
+          <a href="https://github.com/huan00">Github</a>
+        </li>
+        <Link to="resume">
+          <li>Resume</li>
+        </Link>
       </ul>
     </div>
   )
