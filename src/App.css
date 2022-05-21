@@ -34,6 +34,7 @@ a:hover {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400px;
+  margin: 0 105px;
 
   border-bottom: 1px solid white;
 }
@@ -180,4 +181,27 @@ a:hover {
   margin: 24px 0 0 0;
   display: flex; 
   font-size: 18px;
+}
+
+/***********resume*********/
+.resume {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume-container {
+  height: 930px;
+  width: 750px;
+  background-color: white;
+  overflow-y: hidden;
+}
+
+.resume a {
+  font-size: 24px;
+  margin: 10px 0;
 }

@@ -11,7 +11,7 @@ const index = () => {
     "Problem solver with experience in telecommication (Verizon, AT&T, Samsung, T-Mobile) where I leveraged tools to troubleshoot and solve user problems. Now I'm building simple and useful applications that would directly address problems with technology."
   const projects = [
     {
-      name: 'Center',
+      name: 'Center - Mood tracking',
       image: center,
       about:
         'Tracking user emotions, provide history of their emotions. User can start forum chat to get advise from other users',
@@ -19,7 +19,7 @@ const index = () => {
       link: 'https://center-mood-tracker.herokuapp.com/'
     },
     {
-      name: 'Friday Laundry',
+      name: 'Ecommerce',
       image: fridaylaundry,
       about:
         'E-commerce website, able to add item to cart and create user login',
@@ -27,7 +27,7 @@ const index = () => {
       link: 'https://friday-laundry.herokuapp.com/'
     },
     {
-      name: 'Amusement',
+      name: 'Amusement Park',
       image: amusement,
       about: 'App use to track amusement parks, user can add parks and rides',
       language: ['React', 'CSS', 'Express', 'MongoDB'],
