@@ -39,7 +39,7 @@ const index = () => {
       about:
         'Use RAWG API to make an application, that can search game by genra or title',
       language: ['Vue', 'CSS', 'API'],
-      link: 'https://pacific-retreat-36914.herokuapp.com/'
+      link: 'https://main.d2knnk6nijo7tf.amplifyapp.com/'
     }
   ]
   const languages = [

@@ -87,20 +87,24 @@ a:hover {
 /******main-content*******/
 .skills {
   margin: 0 0 74px 0;
+  
 }
 
 .skills-titles {
-  display: flex;
+  display: grid;
+  grid-template: 1fr / 1fr 1fr 1fr;
   border-bottom: 1px solid white;
 }
 
 .skills-titles h3 {
-  margin: 0 233px 24px 0;
+  /* margin: 0 233px 24px 0; */
   font-size: 18px;
 }
 
 .skills-list {
-  display: flex;
+  display: grid;
+  grid-template: 1fr / 1fr 1fr 1fr;
+  justify-content: flex-start;
   margin: 24px 0 0 0;
 }
 
@@ -114,11 +118,11 @@ a:hover {
 }
 
 .framework {
-  margin: 0 0 0 190px;
+  /* margin: 0 0 0 190px; */
 }
 
 .database {
-  margin: 0 0 0 240px
+  /* margin: 0 0 0 240px */
 }
 
 /*********project-container******/
