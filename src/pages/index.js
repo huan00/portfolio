@@ -4,6 +4,7 @@ import center from '../components/assets/images/Center.png'
 import fridaylaundry from '../components/assets/images/fridaylaundry.png'
 import amusement from '../components/assets/images/amusement.png'
 import RAWG from '../components/assets/images/RAWG.png'
+import weather from '../components/assets/images/weather.png'
 
 const index = () => {
   const name = 'HUAN ZENG'
@@ -40,6 +41,14 @@ const index = () => {
         'Use RAWG API to make an application, that can search game by genra or title',
       language: ['Vue', 'CSS', 'API'],
       link: 'https://main.d2knnk6nijo7tf.amplifyapp.com/'
+    },
+    {
+      name: 'Weather App',
+      image: weather,
+      about:
+        'Using react and WeatherAPI to build an weather app, on load the app display user location weather. user can search weather by zipcode.',
+      language: ['ReactJs', 'CSS', 'API'],
+      link: 'https://main.dec8narsebvtj.amplifyapp.com/'
     }
   ]
   const languages = [
@@ -81,15 +90,15 @@ const index = () => {
             </div>
             <div className="framework skill-list-container">
               <ul>
-                {frameworks.map((framework) => (
-                  <li>{framework}</li>
+                {frameworks.map((framework, idx) => (
+                  <li key={idx}>{framework}</li>
                 ))}
               </ul>
             </div>
             <div className="database skill-list-container">
               <ul>
-                {databases.map((database) => (
-                  <li>{database}</li>
+                {databases.map((database, idx) => (
+                  <li key={idx}>{database}</li>
                 ))}
               </ul>
             </div>

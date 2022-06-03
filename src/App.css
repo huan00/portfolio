@@ -142,7 +142,7 @@ a:hover {
 
 .project {
   width: 45%;
-  height: 500px;
+  height: fit-content;
   margin: 75px 10px 0 10px;
 
   /* border: 1px solid black; */
@@ -182,7 +182,7 @@ a:hover {
 }
 
 .project-language {
-  margin: 24px 0 0 0;
+  margin: 24px 0 10px 0;
   display: flex; 
   font-size: 18px;
 }
