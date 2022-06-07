@@ -10,7 +10,8 @@ body {
   color: white;
   font-family: 'Roboto';
 
-  max-width: 1440px;
+  /* width: 100vw; */
+  overflow-x: hidden;
   /* padding: 0 105px; */
 }
 
@@ -25,18 +26,22 @@ a:hover {
 }
 
 .app-container {
-  padding: 0 105px;
+  /* padding: 0 105px; */
 }
 
 /********navbar****/
+
 .navbar {
   height: 140px;
+  width: 100vw;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400px;
-  margin: 0 105px;
+  margin: 0 0 0 50px;
+  padding: 0 50px 0 0;
 
   border-bottom: 1px solid white;
+  background-color: black;
 }
 
 .navbar-list {
@@ -45,7 +50,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
- 
+
   list-style-type: none;
 }
 
@@ -54,6 +59,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 50px 0 0;
 }
 
 .navbar-list-items {
@@ -67,11 +73,18 @@ a:hover {
 }
 
 /*********intro**********/
+.info-container {
+  width: 100vw;
+  background-color: black;
+
+  /* margin: 0 115px 0 115px; */
+}
+
 .intro {
   height: 360px;
   font-size: 52px;
 
-  margin: 53px 0 0 0;
+  margin: 53px 50px 0 50px;
 }
 
 .name {
@@ -85,6 +98,12 @@ a:hover {
 }
 
 /******main-content*******/
+
+.main-content {
+  width: 100vw;
+  margin: 0 0 0 50px;
+}
+
 .skills {
   margin: 0 0 74px 0;
   
@@ -133,15 +152,18 @@ a:hover {
   background-color: white;
 
   margin: 75px 0 0 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
+  display: grid;
+  grid-template: auto / 1fr 1fr;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  align-items: center;
   color: black;
+
+  /* text-align: center; */
 }
 
 .project {
-  width: 45%;
+  width: 90%;
   height: fit-content;
   margin: 75px 10px 0 10px;
 
@@ -149,6 +171,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   
 }
 
@@ -156,15 +179,18 @@ a:hover {
   max-width: 100%;
   height: 300px;
 
+  text-align: center;
+
   /* border: 1px solid black; */
 }
 
 .project-details {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
-  width: 100%;
+  width: 80%;
+  text-align: center;
 
 }
 
@@ -208,4 +234,52 @@ a:hover {
 .resume a {
   font-size: 24px;
   margin: 10px 0;
+}
+
+@media only screen and (max-width: 475px) {
+  *{
+    padding: 0;
+    margin: 0;
+  }
+  body{
+    width: 425px;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .app {
+    width: 100%;
+  }
+
+  .app-container {
+    width: 100vw;
+  }
+
+  .info-container {
+    width: 100vw;
+  }
+
+  .intro {
+    width: 100vw;
+    /* margin: 0 */
+    height: fit-content;
+    margin: 53px 50px 15px 50px;
+  }
+.brandStatement {
+  font-size: 1.3rem;
+}
+
+.skill-list-container li {
+  font-size: 1rem;
+  
+}
+
+.project-container {
+  width: 140%;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+}
 }

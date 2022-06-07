@@ -67,40 +67,42 @@ const index = () => {
 
   return (
     <div className="app-container">
-      <section className="intro">
-        <div className="name">
-          <p>{name}</p>
-        </div>
-        <p className="brandStatement">{brandStatement}</p>
-      </section>
-      <div className="main-content">
-        <div className="skills">
-          <div className="skills-titles">
-            <h3 className="skills-title">Language</h3>
-            <h3 className="skills-title">Framework</h3>
-            <h3 className="skills-title">Database</h3>
+      <div className="info-container">
+        <section className="intro">
+          <div className="name">
+            <p>{name}</p>
           </div>
-          <div className="skills-list">
-            <div className="language skill-list-container">
-              <ul>
-                {languages.map((langage) => (
-                  <li>{langage}</li>
-                ))}
-              </ul>
+          <p className="brandStatement">{brandStatement}</p>
+        </section>
+        <div className="main-content">
+          <div className="skills">
+            <div className="skills-titles">
+              <h3 className="skills-title">Language</h3>
+              <h3 className="skills-title">Framework</h3>
+              <h3 className="skills-title">Database</h3>
             </div>
-            <div className="framework skill-list-container">
-              <ul>
-                {frameworks.map((framework, idx) => (
-                  <li key={idx}>{framework}</li>
-                ))}
-              </ul>
-            </div>
-            <div className="database skill-list-container">
-              <ul>
-                {databases.map((database, idx) => (
-                  <li key={idx}>{database}</li>
-                ))}
-              </ul>
+            <div className="skills-list">
+              <div className="language skill-list-container">
+                <ul>
+                  {languages.map((langage) => (
+                    <li>{langage}</li>
+                  ))}
+                </ul>
+              </div>
+              <div className="framework skill-list-container">
+                <ul>
+                  {frameworks.map((framework, idx) => (
+                    <li key={idx}>{framework}</li>
+                  ))}
+                </ul>
+              </div>
+              <div className="database skill-list-container">
+                <ul>
+                  {databases.map((database, idx) => (
+                    <li key={idx}>{database}</li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         </div>
