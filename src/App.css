@@ -6,13 +6,14 @@
 }
 
 body {
-  background-color: black;
   color: white;
   font-family: 'Roboto';
 
-  /* width: 100vw; */
-  overflow-x: hidden;
-  /* padding: 0 105px; */
+}
+
+#root {
+  width: 100%;
+  background-color: white;
 }
 
 a {
@@ -30,6 +31,9 @@ a:hover {
 }
 
 /********navbar****/
+nav {
+  /* padding: 0 0 0 50px */
+}
 
 .navbar {
   height: 140px;
@@ -37,8 +41,7 @@ a:hover {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400px;
-  margin: 0 0 0 50px;
-  padding: 0 50px 0 0;
+
 
   border-bottom: 1px solid white;
   background-color: black;
@@ -59,7 +62,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 50px 0 0;
+  /* margin: 0 50px 0 0; */
 }
 
 .navbar-list-items {
@@ -70,6 +73,10 @@ a:hover {
   justify-content: center;
   align-items: center;
   text-decoration: underline;
+}
+
+.navbar-title {
+  margin: 0 0 0 50px
 }
 
 /*********intro**********/
@@ -83,8 +90,7 @@ a:hover {
 .intro {
   height: 360px;
   font-size: 52px;
-
-  margin: 53px 50px 0 50px;
+  padding: 53px 50px 0 50px
 }
 
 .name {
@@ -100,12 +106,12 @@ a:hover {
 /******main-content*******/
 
 .main-content {
-  width: 100vw;
-  margin: 0 0 0 50px;
+  /* width: 100vw; */
+  padding: 0 0 0 50px;
 }
 
 .skills {
-  margin: 0 0 74px 0;
+  padding: 0 0 74px 0;
   
 }
 
@@ -151,7 +157,7 @@ a:hover {
   width: 100%;
   background-color: white;
 
-  margin: 75px 0 0 0;
+  /* margin: 75px 0 0 0; */
   display: grid;
   grid-template: auto / 1fr 1fr;
   /* flex-wrap: wrap; */
@@ -242,13 +248,13 @@ a:hover {
     margin: 0;
   }
   body{
-    width: 425px;
+    width: 100%;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
   }
   .app {
-    width: 100%;
+
   }
 
   .app-container {
@@ -261,9 +267,7 @@ a:hover {
 
   .intro {
     width: 100vw;
-    /* margin: 0 */
     height: fit-content;
-    margin: 53px 50px 15px 50px;
   }
 .brandStatement {
   font-size: 1.3rem;
@@ -275,11 +279,16 @@ a:hover {
 }
 
 .project-container {
-  width: 140%;
+  width: 100%;
   margin: 0;
   padding: 0;
 
   display: flex;
   flex-direction: column;
+}
+
+/*****nav*********/
+.navbar {
+  color: red
 }
 }

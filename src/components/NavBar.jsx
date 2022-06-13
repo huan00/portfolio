@@ -5,7 +5,7 @@ const NavBar = () => {
   return (
     <div className="navbar">
       <ul className="navbar-list">
-        <section>
+        <section className="navbar-title">
           <li>
             <Link to="/">Fullstack Software Engineer</Link>
           </li>
