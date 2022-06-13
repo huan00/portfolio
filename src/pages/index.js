@@ -61,7 +61,7 @@ const index = () => {
     'Express',
     'Node.js'
   ]
-  const frameworks = ['React', 'Vue', 'Django']
+  const frameworks = ['React', 'React Native', 'Vue', 'Django']
 
   const databases = ['MongoDB', 'PostgreSQL']
 
