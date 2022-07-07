@@ -5,6 +5,7 @@ import fridaylaundry from '../components/assets/images/fridaylaundry.png'
 import amusement from '../components/assets/images/amusement.png'
 import RAWG from '../components/assets/images/RAWG.png'
 import weather from '../components/assets/images/weather.png'
+import task from '../components/assets/images/task_manager.png'
 
 const index = () => {
   const name = 'HUAN ZENG'
@@ -49,6 +50,14 @@ const index = () => {
         'Using react and WeatherAPI to build an weather app, on load the app display user location weather. user can search weather by zipcode.',
       language: ['ReactJs', 'CSS', 'API'],
       link: 'https://main.dec8narsebvtj.amplifyapp.com/'
+    },
+    {
+      name: 'Task Manager',
+      image: task,
+      about:
+        'Task manager app build with react and MUI. add, delete, update task, set task urgency',
+      language: ['ReactJs', 'CSS'],
+      link: 'https://taskmanager00.netlify.app/'
     }
   ]
   const languages = [
