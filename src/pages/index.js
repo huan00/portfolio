@@ -1,4 +1,3 @@
-import React from 'react'
 import ProjectCard from '../components/ProjectCard'
 import center from '../components/assets/images/Center.png'
 import fridaylaundry from '../components/assets/images/fridaylaundry.png'
@@ -93,8 +92,8 @@ const index = () => {
             <div className="skills-list">
               <div className="language skill-list-container">
                 <ul>
-                  {languages.map((langage) => (
-                    <li>{langage}</li>
+                  {languages.map((langage, idx) => (
+                    <li key={idx}>{langage}</li>
                   ))}
                 </ul>
               </div>
