@@ -25,7 +25,7 @@ const index = () => {
       about:
         'E-commerce website, able to add item to cart and create user login',
       language: ['React', 'CSS', 'Express', 'PostgreSQL'],
-      link: 'https://friday-laundry.herokuapp.com/'
+      link: 'https://hzecommerce.netlify.app'
     },
     {
       name: 'Amusement Park',
