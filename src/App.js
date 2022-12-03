@@ -1,21 +1,17 @@
-import './App.css'
+import './styles.css'
 import NavBar from './components/NavBar'
 import { Routes, Route } from 'react-router-dom'
 import Home from './pages'
 import Resume from './pages/Resume'
+import Main from './pages/Main'
 
 function App() {
   return (
     <div className="App">
-      <nav>
-        <NavBar />
-      </nav>
-      <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="resume" element={<Resume />} />
-        </Routes>
-      </main>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Main />} />
+      </Routes>
     </div>
   )
 }
